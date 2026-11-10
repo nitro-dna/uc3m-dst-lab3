@@ -1,8 +1,8 @@
 # primer checker client 
 import socket 
 
-HOST = 'localhost'
-PORT = 8082
+SERVER_HOST = 'localhost'
+SERVER_PORT = 8082
 BUFF_SIZE = 1024
 
 def main():
