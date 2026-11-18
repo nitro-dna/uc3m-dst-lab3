@@ -1,3 +1,4 @@
+#Mateo Gomez, Artun Gonen, Andrey Bozev
 import requests
 
 url_operation_10 = 'http://localhost:5000/operations/10'

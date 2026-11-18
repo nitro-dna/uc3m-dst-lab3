@@ -1,3 +1,4 @@
+#Mateo Gomez, Artun Gonen, Andrey Bozev
 # primer checker client 
 import socket 
 
@@ -11,9 +12,9 @@ def main():
 
     try:
         while True:
-            user_input = input("Enter an integer between 2,100 or 'exit' to quit").strip()
+            user_input = input("Enter an integer between 2,100 or 'exit' to quit: ").strip()
             if user_input.lower() == "exit":
-                print("CLosing client socket")
+                print("Closing client socket")
                 break
             #send input to UDP 
             client_sock.sendto(user_input.encode('utf-8'), server_adress)

@@ -1,3 +1,4 @@
+#Mateo Gomez, Artun Gonen, Andrey Bozev
 #exercise 1:Prime checker server
 
 import socket
@@ -41,13 +42,13 @@ def main():
                 sock.sendto("This is not an integer".encode('utf-8'), client_adress)
                 continue
             #verify the range 
-            if number < 2 and number > 100:
+            if number < 2 or number > 100:
                 reply = "Error: Number is out of range"
             #check primarly
             elif _isPrime(number):
-                reply = f"The number {number} is prime"
+                reply = f"The number {number} is prime!"
             else:
-                reply = f"The number {number} is NOT prime"
+                reply = f"The number {number} is NOT prime :("
             sock.sendto(reply.encode('utf-8'), client_adress)
     except KeyboardInterrupt:
         print("\nServer shutting down")
